@@ -1,0 +1,24 @@
+{
+  "name": "podcast",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "node src/scripts/generate-rss.mjs && next build",
+    "new-episode": "node src/scripts/new-episode.mjs",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "inquirer": "^13.2.0",
+    "lucide-react": "^0.562.0",
+    "next": "16.1.2",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "eslint": "^9",
+    "eslint-config-next": "16.1.2"
+  }
+}

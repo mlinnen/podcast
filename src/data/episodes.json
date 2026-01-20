@@ -1,0 +1,24 @@
+[
+    {
+        "id": "1",
+        "title": "The First Chip",
+        "slug": "the-first-chip",
+        "description": "Welcome to the very first episode of Let the Chips Fly. We discuss the origins of the podcast and what's in store.",
+        "audioUrl": "https://traffic.libsyn.com/secure/forcedn/example/podcast_ep1.mp3",
+        "videoUrl": "https://www.youtube.com/embed/example",
+        "date": "2023-10-01",
+        "duration": "15:30",
+        "coverImage": "/images/episode-1.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Betting High",
+        "slug": "betting-high",
+        "description": "We dive deep into the world of high stakes and big risks. When to hold 'em and when to fold 'em.",
+        "audioUrl": "https://traffic.libsyn.com/secure/forcedn/example/podcast_ep2.mp3",
+        "videoUrl": "https://www.youtube.com/embed/example2",
+        "date": "2023-10-15",
+        "duration": "42:15",
+        "coverImage": "/images/episode-2.jpg"
+    }
+]

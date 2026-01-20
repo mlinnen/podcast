@@ -1,0 +1,55 @@
+:root {
+  /* Premium Dark Palette */
+  --background: #050505;
+  --foreground: #ffffff;
+  --surface: #121212;
+  --surface-hover: #1e1e1e;
+  --primary: #d4af37; /* Metallic Gold */
+  --primary-hover: #f1c40f;
+  --secondary: #2c3e50;
+  --accent: #e74c3c;
+  
+  --border: #333333;
+  --glass-bg: rgba(18, 18, 18, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  
+  --max-width: 1200px;
+  --font-heading: var(--font-geist-sans);
+  --font-body: var(--font-geist-sans);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--surface-hover);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Let the Chips Fly</title>
+    <link>https://example.com</link>
+    <description>The official home of the Let the Chips Fly podcast. High stakes. Big risks. No regrets.</description>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jan 2026 19:25:11 GMT</lastBuildDate>
+    <atom:link href="https://example.com/feed.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title><![CDATA[The First Chip]]></title>
+      <link>https://example.com/episodes/the-first-chip</link>
+      <guid isPermaLink="true">https://example.com/episodes/the-first-chip</guid>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 GMT</pubDate>
+      <description><![CDATA[Welcome to the very first episode of Let the Chips Fly. We discuss the origins of the podcast and what's in store.]]></description>
+      <enclosure url="https://traffic.libsyn.com/secure/forcedn/example/podcast_ep1.mp3" length="0" type="audio/mpeg" />
+    </item>
+    <item>
+      <title><![CDATA[Betting High]]></title>
+      <link>https://example.com/episodes/betting-high</link>
+      <guid isPermaLink="true">https://example.com/episodes/betting-high</guid>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 GMT</pubDate>
+      <description><![CDATA[We dive deep into the world of high stakes and big risks. When to hold 'em and when to fold 'em.]]></description>
+      <enclosure url="https://traffic.libsyn.com/secure/forcedn/example/podcast_ep2.mp3" length="0" type="audio/mpeg" />
+    </item>
+  </channel>
+</rss>

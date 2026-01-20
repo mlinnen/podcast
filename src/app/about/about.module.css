@@ -1,0 +1,55 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--primary);
+    text-align: center;
+}
+
+.content {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    color: var(--foreground);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    margin-bottom: 1.5rem;
+}
+
+.hostGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.hostCard {
+    background: var(--surface);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid var(--border);
+}
+
+.hostName {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+    color: var(--primary);
+}
+
+.hostBio {
+    font-size: 0.9rem;
+    color: #999;
+}
