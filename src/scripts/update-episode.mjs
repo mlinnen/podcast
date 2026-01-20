@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { execSync } from 'child_process';
 import inquirer from 'inquirer';
 import slugify from 'slugify';
 
@@ -159,6 +160,13 @@ async function main() {
     fs.writeFileSync(EPISODES_PATH, JSON.stringify(episodes, null, 2));
 
     console.log('\n✅ Episode updated successfully!');
+
+    try {
+        console.log('🔄 Regenerating RSS feed...');
+        execSync('node src/scripts/generate-rss.mjs', { stdio: 'inherit' });
+    } catch (error) {
+        console.error('❌ Failed to regenerate RSS feed:', error.message);
+    }
 }
 
 main().catch(console.error);

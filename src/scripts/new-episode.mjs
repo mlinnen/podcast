@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { execSync } from 'child_process';
 import inquirer from 'inquirer';
 import slugify from 'slugify';
 
@@ -83,6 +84,13 @@ async function main() {
     console.log(`Title: ${newEpisode.title}`);
     console.log(`Slug: ${newEpisode.slug}`);
     console.log(`ID: ${newEpisode.id}`);
+
+    try {
+        console.log('🔄 Regenerating RSS feed...');
+        execSync('node src/scripts/generate-rss.mjs', { stdio: 'inherit' });
+    } catch (error) {
+        console.error('❌ Failed to regenerate RSS feed:', error.message);
+    }
 }
 
 main().catch(console.error);
