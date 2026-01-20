@@ -27,7 +27,7 @@ export default function Home() {
                 <div className={styles.cardContent}>
                   <p className={styles.cardDate}>{new Date(episode.date).toLocaleDateString()}</p>
                   <h2 className={styles.cardTitle}>{episode.title}</h2>
-                  <p className={styles.cardDescription}>{episode.description}</p>
+                  <div className={styles.cardDescription} dangerouslySetInnerHTML={{ __html: episode.description }} />
                   <Link href={`/episodes/${episode.slug}`} className={styles.cardLink}>
                     Listen Now &rarr;
                   </Link>

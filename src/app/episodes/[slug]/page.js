@@ -43,7 +43,7 @@ export default async function EpisodePage({ params }) {
             </div>
 
             <div className={styles.content}>
-                <p>{episode.description}</p>
+                <div dangerouslySetInnerHTML={{ __html: episode.description }} />
             </div>
         </div>
     );
