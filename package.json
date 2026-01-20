@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "node src/scripts/generate-rss.mjs && next build",
     "new-episode": "node src/scripts/new-episode.mjs",
+    "update-episode": "node src/scripts/update-episode.mjs",
     "start": "next start",
     "lint": "eslint"
   },
